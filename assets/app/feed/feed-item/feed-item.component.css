@@ -1,0 +1,82 @@
+/* img {
+    height:40%;
+    width: 40%;
+
+}
+*/
+
+
+.example-card {
+    width: 450px;
+    height: 25%;
+    margin-left: 20%;
+    background: #fbfcf7;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .share-image {
+    background-image: url('https://image.freepik.com/free-icon/share_318-10459.jpg');
+    background-size: cover;
+  }
+
+  .ingredients-title {
+      margin-right: 85%;
+      text-decoration: underline;
+  }
+
+  .card-btn {
+      background: white;
+  }
+  .glyphicon {
+      height: 50%;
+      width: 100%
+  }
+
+  .mat-card-actions {
+    margin-top: -5%;
+    /* margin-left: -352px;
+    margin-right: -16px;
+    margin-top: -19px;
+    padding: 8px 0; */
+    
+  }
+  
+  ul li:before {
+    content: '\2014';
+    position: absolute;
+    margin-left: -20px;
+  }
+  ul {
+    list-style-type: none;
+    text-align: left;
+  }
+
+  .instructions{
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+  }
+
+  .instructions-title {
+  text-decoration: underline;
+  }
+
+  .ingredients {
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+}
+
+
+div.vl {
+    display: inline-block;
+    border-left: 1px solid #b0b1b2;
+    height: 130px;
+    padding-left: 30px;
+    position: relative;
+}
+  

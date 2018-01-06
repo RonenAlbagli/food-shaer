@@ -1,0 +1,27 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{data.title}}</mat-card-title>
+      <mat-card-subtitle> {{data.description}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{data.image}}" alt="Photo of a Shiba Inu">
+    <mat-card-actions>
+        <button mat-button class="card-btn btn-lg"> <span class="glyphicon glyphicon-heart-empty like"></span> </button>
+        <button mat-button class="card-btn  btn-lg"> <span class="glyphicon glyphicon-share"></span></button>
+      </mat-card-actions>
+    <mat-card-content>
+      <div>
+        <div class="ingredients">
+          <p class="ingredients-title"> Ingredients:</p>
+            <ul class="hyphen" *ngFor="let ingredient of data.ingredients">
+              <li>{{ingredient.ingredient}} - {{ingredient.amount}}</li>
+            </ul>
+        </div>
+        <div class="vl"></div>
+        <div class="instructions">
+              <p class="instructions-title"> instructions:</p>
+                  <p>{{data.instructions}}</p>
+            </div> 
+        </div>
+    </mat-card-content>
+  </mat-card>

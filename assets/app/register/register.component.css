@@ -1,0 +1,25 @@
+.loginDiv {
+    background: #4a4b4c;
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    margin-top: 100px;
+    margin-left:28%;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.outerDiv {
+    height: 800px;
+    width: 100%;
+    background-image: url('https://pbs.twimg.com/profile_images/818976825217024000/HuJOK52l.jpg');
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 0;
+    position: absolute
+    
+}
+
+.passwordValidator {
+    color:red;
+} 
