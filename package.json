@@ -39,6 +39,7 @@
     "require-optional": "^0.4.0",
     "rxjs": "^5.5.0",
     "serve-favicon": "~2.3.0",
+    "validator": "^9.2.0",
     "zone.js": "^0.8.5"
   },
   "devDependencies": {

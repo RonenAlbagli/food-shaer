@@ -10,6 +10,7 @@ import { FeedComponent } from './feed/feed.component';
 import { FeedListComponent } from './feed/feed-list/feed-list.component';
 import { FeedItemComponent } from './feed/feed-item/feed-item.component';
 import { FeedService } from './feed/feed-service';
+
 import { CardComponent } from 'ng2-bootstrap-card/ng2-bootstrap-card';
 import {FormsModule ,ReactiveFormsModule } from '@angular/forms'
 
@@ -55,6 +56,7 @@ import { MainComponent } from './main/main.component';
 import { RegisterComponent } from './register/register.component';
 import { HttpModule } from '@angular/http';
 import { AddRecipeComponent } from './feed/add-recipes/add-recipes.component';
+import { authService } from './login/authSevice';
 
 
 @NgModule({
@@ -92,7 +94,7 @@ import { AddRecipeComponent } from './feed/add-recipes/add-recipes.component';
     FormsModule,
     HttpModule
   ],
-  providers: [FeedService],
+  providers: [FeedService, authService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

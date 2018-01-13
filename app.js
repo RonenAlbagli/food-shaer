@@ -34,7 +34,7 @@ app.use(function(req, res, next) {
 });
 
 app.use('/recipes', recipesRoutes);
-app.use('/user', usersRoutes);
+app.use('/users', usersRoutes);
 app.use('/', appRoutes);
 
 

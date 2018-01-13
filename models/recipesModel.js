@@ -9,7 +9,7 @@ const recipesSchema = new Schema({
     //     ingredient : {type:String},
     //     amount: {type: String}
     // }],
-    // image :  {type:String, },
+    image :  {type:String },
     // video :  {type:String},
 })
 // recipesSchema.plugin(mongooseUniqueValidator);

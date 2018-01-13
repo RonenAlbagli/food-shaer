@@ -33,10 +33,6 @@ export class FeedService {
     }
 
     addRecipe(recipes: Recipes){
-    //    this.recipesList.push(recipes);
-    //    console.log(this.recipesList);
-
-    console.log('recipes that need to be added',recipes);
        const headers = new Headers({'Content-Type':'application/json'})
        return this.http.post('http://localhost:3000/recipes', recipes, {headers})
         .map((response: Response)=> response.json())

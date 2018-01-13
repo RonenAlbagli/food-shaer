@@ -10,8 +10,12 @@ router.get('/live', (req,res,next)=>{
   console.log('in live server');
 })
 
-router.get('/recipes',(req,res)=>{
+router.get('/recipes',(req,res,next)=>{
 
 })
+
+router.get('/users',(req,res,next)=>{
+  
+  })
 
 module.exports = router;

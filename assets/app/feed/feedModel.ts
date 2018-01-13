@@ -5,10 +5,10 @@ export class feed {
     image: string;
 
 
-    constructor(title: string, description: string, ingredient: string) {
+    constructor(title: string, description: string, ingredient: string, image: string) {
         this.title = title;
         this.description = description;
         this.ingredient = ingredient;
-        //this.image = image
+        this.image = image
     }
 }
