@@ -9,15 +9,20 @@
 }
 
 .ingridentP {
-    margin-left: 90px;
- }
+    margin-left: 15px;
+}
 
- p {
+p {
     display: inline-block;
- }
+}
 
- .instructions {
+.instructions {
     margin: 0px;
-    width: 708px;
-    height: 240px;
-  }
+    width: 484px;
+    height: 163px;
+}
+
+.layout{
+    width: 70%;
+    margin-left: 15%;
+} 

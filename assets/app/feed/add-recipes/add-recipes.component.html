@@ -1,23 +1,23 @@
 <div class="col-md-8 col-md-offset-2">
-    <form (ngSubmit)="onSubmit(recipe)" #recipe="ngForm">
+    <form (ngSubmit)="onSubmit()" [formGroup]="addRecipe"  class='layout'>
         <div class="from-group">
             <label for="title">Recipe Name:</label>
-            <input type="text" name="title" id="title" [ngModel]="recipe.title" class="form-control" required>
+            <input type="text" name="title" id="title"formControlName='title' class="form-control" required>
 
             <label for="description">Recipe Description:</label>
-            <input type="text" name="description" id="description" [(ngModel)]="recipe.description" class="form-control" required>
+            <input type="text" name="description" id="description" formControlName="description" class="form-control" required>
 
             <h5>Ingredients:</h5>
             <div>
                 <div>
                     <label class='ingridentP' for="ingredients.ingredientName">Ingredients:</label>
-                    <input type="text" name="name"  class="form-control Ingredient" [ngModel]="recipe?.ingredients.ingredientName" required>
+                    <input type="text" name="name" formArrayName='ingredients'  class="form-control Ingredient"  required>
                     <label class='ingridentP' for="ingredients.ingredientAmount">Amount:</label>
-                    <input type="number" name="amount" class="form-control IngredientAmount" [ngModel]="recipe?.ingredients.ingredientAmount" required> grams
+                    <input type="number" name="amount" class="form-control IngredientAmount"  required> grams
                 </div>
             </div>
-            <label for="ingredients">instructions:</label>
-            <textarea name="" id="" cols="30" class='instructions'  [ngModel]="recipe.instructions" rows="10"></textarea>
+            <label for="instructions">instructions:</label>
+            <textarea name="" id="" cols="30" class='instructions' formControlName="instructions"  rows="10"></textarea>
             <br>
         </div>
             <button type="submit" class='btn btn-primary'>Add Recipe</button>
