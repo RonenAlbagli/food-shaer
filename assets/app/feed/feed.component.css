@@ -6,3 +6,9 @@
     height: 400px;
 
 }
+
+.addRecipe {
+    font-size: 75px;
+    margin-right: -110%;
+    position: relative;
+}

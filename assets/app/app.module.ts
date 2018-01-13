@@ -1,9 +1,9 @@
-import { AppRoutingModule } from './router/app-router';
+
 import { DropdownDirective } from './shared/ddl.directive';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
+import { routing } from './router/app-router';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './header/nav-bar/nav-bar.component';
 import { FeedComponent } from './feed/feed.component';
@@ -54,6 +54,7 @@ import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 import { RegisterComponent } from './register/register.component';
 import { HttpModule } from '@angular/http';
+import { AddRecipeComponent } from './feed/add-recipes/add-recipes.component';
 
 
 @NgModule({
@@ -72,6 +73,7 @@ import { HttpModule } from '@angular/http';
     CardComponent,
     DropdownDirective,
     ProfileComponent,
+    AddRecipeComponent,
     // CommunitiesComponent,
     LiveComponent,
     FavoriteComponent,
@@ -85,7 +87,7 @@ import { HttpModule } from '@angular/http';
     MatCardModule,
     MatButtonModule,
     MatButtonToggleModule,
-    AppRoutingModule,
+    routing,
     ReactiveFormsModule,
     FormsModule,
     HttpModule

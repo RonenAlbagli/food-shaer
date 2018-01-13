@@ -1,3 +1,4 @@
+import { AddRecipeComponent } from './../feed/add-recipes/add-recipes.component';
 import { LiveComponent } from './../live/live.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -16,13 +17,16 @@ const appRoutes: Routes= [
     { path: 'favorite', component: FavoriteComponent  },
     { path: 'logout', component: LoginComponent  },
     { path: 'register', component: RegisterComponent  },
+    { path: 'addrecipe', component: AddRecipeComponent}
 
 ]
 
-@NgModule({
-    imports: [RouterModule.forRoot(appRoutes)],
-    exports: [RouterModule]
-  })
-  export class AppRoutingModule {
+export const routing = RouterModule.forRoot(appRoutes)
+
+// @NgModule({
+//     imports: [RouterModule.forRoot(appRoutes)],
+//     exports: [RouterModule]
+//   })
+//   export class AppRoutingModule {
   
-  }
+//   } = 

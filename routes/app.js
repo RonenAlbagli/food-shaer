@@ -6,4 +6,12 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/live', (req,res,next)=>{
+  console.log('in live server');
+})
+
+router.get('/recipes',(req,res)=>{
+
+})
+
 module.exports = router;

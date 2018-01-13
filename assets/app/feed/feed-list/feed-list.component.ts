@@ -11,8 +11,11 @@ export class FeedListComponent implements OnInit {
   constructor(private feedService: FeedService) { }
   feeds;
   ngOnInit() {
-     this.feeds = this.feedService.getFeeds();
-    console.log(this.feeds);
+    console.log('in')
+     this.feedService.getFeeds().subscribe(
+       data => this.feeds = data,
+       error=>  console.log(error)
+     )
   }
 
 }
