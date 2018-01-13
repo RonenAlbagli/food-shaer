@@ -1,16 +1,25 @@
-<div class="col-md-8 col-md-offset-2">   
+<div class="col-md-8 col-md-offset-2">
     <form (ngSubmit)="onSubmit(recipe)" #recipe="ngForm">
         <div class="from-group">
             <label for="title">Recipe Name:</label>
-            <input type="text" name="title" id="title" [ngModel]="message?.title" class="form-control" required>
+            <input type="text" name="title" id="title" [ngModel]="recipe.title" class="form-control" required>
 
             <label for="description">Recipe Description:</label>
-            <input type="text" name="description" id="description" [ngModel]="message?.description" class="form-control" required>
+            <input type="text" name="description" id="description" [(ngModel)]="recipe.description" class="form-control" required>
 
-            <label for="ingredients">Ingredients:</label>
-            <input type="text" name="ingredients" class="form-control" [ngModel]="message?.ingredients" required>
+            <h5>Ingredients:</h5>
+            <div>
+                <div>
+                    <label class='ingridentP' for="ingredients.ingredientName">Ingredients:</label>
+                    <input type="text" name="name"  class="form-control Ingredient" [ngModel]="recipe?.ingredients.ingredientName" required>
+                    <label class='ingridentP' for="ingredients.ingredientAmount">Amount:</label>
+                    <input type="number" name="amount" class="form-control IngredientAmount" [ngModel]="recipe?.ingredients.ingredientAmount" required> grams
+                </div>
+            </div>
+            <label for="ingredients">instructions:</label>
+            <textarea name="" id="" cols="30" class='instructions'  [ngModel]="recipe.instructions" rows="10"></textarea>
+            <br>
         </div>
-        <br>
-        <button type="submit" class='btn btn-primary'>Add Recipe</button>
+            <button type="submit" class='btn btn-primary'>Add Recipe</button>
     </form>
-</div>
+    </div>

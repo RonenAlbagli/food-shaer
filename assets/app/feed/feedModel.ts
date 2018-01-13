@@ -1,14 +1,20 @@
 export class feed {
     title: string;
     description: string;
-    ingredient: string;
+    ingredients: [{
+        ingredientName: string,
+        ingredientAmount: string
+    }];
     image: string;
 
 
-    constructor(title: string, description: string, ingredient: string, image: string) {
+    constructor(title: string, description: string, ingredient: any, image: string) {
         this.title = title;
         this.description = description;
-        this.ingredient = ingredient;
+        this.ingredients = [{
+            ingredientName : ingredient.name,
+            ingredientAmount : ingredient.amount
+        }];
         this.image = image
     }
 }
